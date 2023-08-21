@@ -1,0 +1,14 @@
+.lang-button {
+  margin: 10px;
+  border: 0px;
+  color: black;
+  font-size: 13px;
+  font-family: 'Roboto';
+  background-color: transparent;
+  font-weight: bold;
+}
+.blue {
+  color: #0284c7;
+  border: #0284c7 1px solid;
+  border-radius: 5px;
+}

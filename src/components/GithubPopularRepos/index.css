@@ -1,0 +1,38 @@
+.github-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.popular-heading {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Lobster;
+  color: black;
+}
+.languages-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ul-repository-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 50%;
+}
+ul {
+  padding: 0px;
+  list-style-type: none;
+}
+.items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
