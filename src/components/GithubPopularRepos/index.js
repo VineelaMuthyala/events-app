@@ -24,10 +24,8 @@ class GithubPopularRepos extends Component {
     const {selectedLanguageId} = this.state
     this.setState({isLoading: true})
     const apiUrl = `https://apis.ccbp.in/popular-repos?language= ${selectedLanguageId}`
-    const options = {
-      method: 'GET',
-    }
-    const response = await fetch(apiUrl, options)
+    
+    const response = await fetch(apiUrl)
     const data = await response.json()
     const updatedData = data.popular_repos.map(eachItem => ({
       name: eachItem.name,
@@ -60,7 +58,7 @@ class GithubPopularRepos extends Component {
   }
 
   renderIsLoading = () => (
-    <Loader type="ThreeDots" color="#0284c7" height={80} width={80} />
+    <Loader type="ThreeDots" color="#0284c7" height={80} width={80} data-testid="loader"/>
   )
 
   render() {
