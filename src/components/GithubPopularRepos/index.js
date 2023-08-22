@@ -23,7 +23,7 @@ class GithubPopularRepos extends Component {
   getRepositoryItems = async () => {
     const {selectedLanguageId} = this.state
     this.setState({isLoading: true})
-    const apiUrl = `https://apis.ccbp.in/popular-repos?language= ${selectedLanguageId}`
+    const apiUrl = `https://apis.ccbp.in/popular-repos?language=${selectedLanguageId}`
     
     const response = await fetch(apiUrl)
     const data = await response.json()
